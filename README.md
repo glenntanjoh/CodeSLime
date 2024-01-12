@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
+  <img src="https://github.com/glenntanjoh/CodeSLime/blob/61d739a691be313eaf8731ac627f916fbef2ea5a/logo.png?raw=true" width="100" />
 </p>
 <p align="center">
     <h1 align="center">CodeSLime</h1>
@@ -249,12 +249,4 @@ cd codeslime
 npm start
 ```
 
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
