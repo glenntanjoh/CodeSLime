@@ -1,0 +1,64 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Button, TextField, List, ListItem, ListItemText } from '@mui/material';
+
+function ChannelPage() {
+  const [channels, setChannels] = useState([]);
+  const [selectedChannel, setSelectedChannel] = useState(null);
+  const [newChannelName, setNewChannelName] = useState('');
+
+  const handleCreateChannel = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/channels', { name: newChannelName });
+      setChannels([...channels, response.data]);
+      setNewChannelName('');
+    } catch (error) {
+      console.error('Failed to create channel:', error);
+    }
+  };
+
+  const handleSelectChannel = async (channel) => {
+    try {
+      const response = await axios.get(`http://localhost:5000/channels/${channel.id}`);
+      setSelectedChannel(response.data);
+    } catch (error) {
+      console.error('Failed to select channel:', error);
+    }
+  };
+
+  useEffect(() => {
+    const fetchChannels = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/channels');
+        setChannels(response.data);
+      } catch (error) {
+        console.error('Failed to fetch channels:', error);
+      }
+    };
+
+    fetchChannels();
+  }, []);
+
+  return (
+    <div>
+      <TextField
+        label="New Channel Name"
+        value={newChannelName}
+        onChange={(e) => setNewChannelName(e.target.value)}
+      />
+      <Button variant="contained" color="primary" onClick={handleCreateChannel}>
+        Create Channel
+      </Button>
+      <List>
+        {channels.map((channel) => (
+          <ListItem button onClick={() => handleSelectChannel(channel)}>
+            <ListItemText primary={channel.name} />
+          </ListItem>
+        ))}
+      </List>
+      {selectedChannel && <div>{/* Display selected channel and messages here */}</div>}
+    </div>
+  );
+}
+
+export default ChannelPage;
