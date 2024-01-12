@@ -5,7 +5,7 @@
     <h1 align="center">CodeSLime</h1>
 </p>
 <p align="center">
-    <em>Code Slime: CodeSlime is a WebApp which aims to provide a space where developers can create topic-specific channels, post messages, and engage through likes, dislikes, and threaded conversations.</em>
+    <em>CodeSLime: CodeSLime is a WebApp which aims to provide a space where developers can create topic-specific channels, post messages, and engage through likes, dislikes, and threaded conversations.</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/glenntanjoh/CodeSlime?style=default&color=0080ff" alt="license">
