@@ -35,6 +35,8 @@
 
 The `codeSLime` project is a Dockerized web application that aims to provide a space where developers can create topic-specific channels, post messages, and engage through likes, dislikes, and threaded conversations. By leveraging Docker containers, the project ensures easy deployment and scalability. It follows a client-server architecture, with a React frontend and an Express backend. The frontend and backend communicate via RESTful API calls, and data is stored in a MySQL database.
 
+![Alt text](image.png)
+
 ---
 
 ##  Features
