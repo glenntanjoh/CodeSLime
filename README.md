@@ -27,11 +27,6 @@
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
 >   - [ Running CodeSlime](#-running-CodeSlime)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
 
 ---
 
