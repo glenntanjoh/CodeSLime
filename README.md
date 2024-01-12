@@ -18,21 +18,24 @@
 </p>
 <hr>
 
-##  Quick Links
+## Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running CodeSlime](#-running-CodeSlime)
+- [Overview](#overview)
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Modules](#modules)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Running CodeSlime](#running-codeslime)
 
 ---
 
-##  Overview
+## Overview
+
 
 The `codeSLime` project is a Dockerized web application that aims to provide a space where developers can create topic-specific channels, post messages, and engage through likes, dislikes, and threaded conversations. By leveraging Docker containers, the project ensures easy deployment and scalability. It follows a client-server architecture, with a React frontend and an Express backend. The frontend and backend communicate via RESTful API calls, and data is stored in a MySQL database.
+
+...
 
 ---
 
@@ -49,7 +52,6 @@ The `codeSLime` project is a Dockerized web application that aims to provide a s
 | ⚡️  | **Performance**   | The project aims for optimized performance, with efficient rendering and minimal resource usage. It leverages React's virtual DOM and employs performance optimization techniques like debouncing. |
 | 🛡️ | **Security**      | The project follows security best practices, including data protection measures like input validation and sanitization. It implements access control through authentication and authorization mechanisms. Data protection accomplished via 'bcryptjs' for hashing passwords. Also, uses 'express-session' for session management. |
 | 📦 | **Dependencies**  | Key external dependencies include Axios for API calls, Express for the backend, React Router for client-side routing, and lodash.debounce for debouncing. |
-
 
 ---
 
